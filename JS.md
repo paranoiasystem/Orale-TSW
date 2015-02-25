@@ -1,11 +1,19 @@
 ##JS
 ####JS: La programmazione lato client con Javascript
+JavaScript consente di effettuare computazioni sugli elementi del documento direttamente sul browser.
+Consente un'elevata dinamicità in quanto gli script sono eseguiti direttamente sul client e non incidono quindi sui tempi di risposta del server, incidendo però (spesso in maniera irrilevante) sulla performance e l'overhead dei dati inviati (gli script devono essere prima scaricati)
+
 ####JS: Elementi del linguaggio Javascript
-Gli elementi del linguaggio JavaScript sono: Variabili, Oggetti, Array, Strutture di controllo, Cicli e Funzioni.
-Inoltre permette l'interazione con l'utente, la gestione degli eventi e la Gestione degli errori. 
+Gli elementi del linguaggio JavaScript sono: Literal (costanti), Variabili, Oggetti, Array, Strutture di controllo, Cicli e Funzioni.
+
+Inoltre permette l'interazione tramite un sistema di eventi ed ha un meccanismo di gestione degli errori. 
 
 ####JS: Campo di visibilità delle variabili in Javascript
-Le variabili in JavaScript sono tipizzate dinamicamente, possono essere definite semplicemente assegnando loro un valore oppure usando il comando var. Le variabili possono essere globali o locali.
+JavaScript gestisce le variabili in maniera del tutto differente dai comuni linguaggi OOP o procedurali.
+
+Le variabili non sono relegate al blocco di codice in cui sono dichiarate, ma rimangono visibili dall'esterno per tutte le funzioni di livello superiore (che racchiudono la funzione che le ha dichiarate) tramite un sistema definito _closure_.
+
+Tale sistema crea una 'bubble' per ogni funzione o istanza di essa che raccoglie tutte le variabli interne e le rende disponibili a tutte le funzioni nel campo di visibilità valori fino al momento in cui la funzione di livello superiore perde ogni riferimento verso quella che le ha create.
 
 __Le variabili Globali__ sono dichiarate fuori da qualunque funzione, sono accessibili da qualsiasi parte dello script.
 
