@@ -5,3 +5,4 @@
 ####AJAX: Differenza di utilizzo delle proprietà responseText e responseXML
 ####AJAX: Modelli di applicazioni web: Classico e Ajax
 ####AJAX: Il ciclo di vita di un'applicazione Ajax
+___
