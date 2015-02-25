@@ -33,3 +33,5 @@ L'HTTP funziona su un meccanismo richiesta/risposta (client/server):
 Il __client__ è la parte che accede ai servizi o alle risorse, effettua una richiesta.
 
 Il __server__ è comunemente un computer dedicato all'ascolto e risposta alle varie richieste
+
+___

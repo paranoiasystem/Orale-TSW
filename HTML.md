@@ -103,3 +103,4 @@ Altri attributi disponibili sono:
 Inoltre è possibile scorrere ad un elemento alla pressione del tasto tab. Per definire l'ordine in cui gli elementi vengono raggiunti bisogna specificare l'attributo `tabindex` settandone il valore al numero di indice che si vuole assegnare. È possibile assegnarli automaticamente (dall'alto al basso) specificando un numero negativo o dando valore uguale a tutti i tab index.
 
 Es: `<div tabindex=5>` se sono stati specificati 4 elementi prima del div allora questo sarà selezionato per quinto, altrimenti il valore serve solo come indice incrementale (se ci sono solo un div con tabindex=2 e uno con tabindex=5, valgono come 1 e 2 non 2 e 5).
+___
