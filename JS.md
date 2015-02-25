@@ -59,3 +59,4 @@ In JavaScript è possibile
 ####JS: Validazione moduli HTML con Javascript
 ####JS: Accesso ai cookie con Javascript
 ####JS: Modifica proprietà CSS con JAVASCRIPT
+___
