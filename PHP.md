@@ -81,18 +81,21 @@ di solito si usa come parametro di un ciclo `while` per scorere tutti i risultat
 Una variabile in PHP può contenere diversi tipi di dati, perché PHP tipizza dinamicamente le variabili.
 
 I tipi base di dati esistenti in PHP sono:
-+boolean
-+integer
-+float
-+string
+
++ boolean
++ integer
++ float
++ string
 
 In PHP esistono anche tipi di dati composti, essi sono:
-+array (composto perché un array in PHP può contenere contemporaneamente tutti i tipi base o object)
-+object (sarebbero gli oggetti di PHP)
+
++ array (composto perché un array in PHP può contenere contemporaneamente tutti i tipi base o object)
++ object (sarebbero gli oggetti di PHP)
 
 Inoltre esitono anche 3 tipi speciali, essi sono:
-+Resurces 
-+NULL ( il valore speciale NULL rappresenta una variable senza valore, una variabile è null se: gli viene assegnato il valore null, non gli è stato ancora assegnato un valore, è stata cancellata con la funzione `unset()`)
+
++ Resurces 
++ NULL ( il valore speciale NULL rappresenta una variable senza valore, una variabile è null se: gli viene assegnato il valore null, non gli è stato ancora assegnato un valore, è stata cancellata con la funzione `unset()`)
 
 ####PHP: Campo di visibilità delle variabili in PHP
 In PHP le variabili possono essere globali, locali o super-globali.
