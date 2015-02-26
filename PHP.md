@@ -19,7 +19,7 @@ Gli array associativi sono strutture più simili a mappe che ad array, ad ogni e
 
 È possibile dichiararli esplicitamente con il metodo array, passandogli ogni tupla nella forma `'chiave' => 'valore'` o implicitamente, settando il valore di un elemento tramite chiave.
 
-ES: `array( 'chiave1' => 1, 'chiave2' => 2); array['chiave3'] = 3;`
+ES: `array( 'chiave1' => 1, 'chiave2' => 2);` o `array['chiave3'] = 3;`
 
 ####PHP: Strutture di controllo in PHP
 Le strutture di controllo in PHP sono le classiche strutture di controllo che è possibile trovare in molti linguaggi di programmazione, esse sono: `if ... else` e `switch case`
@@ -78,6 +78,22 @@ di solito si usa come parametro di un ciclo `while` per scorere tutti i risultat
 ####PHP: Interazione con il browser in PHP
 ####PHP: La gestione di file in PHP
 ####PHP: Tipi di dati e variabili in PHP
+Una variabile in PHP può contenere diversi tipi di dati, perché PHP tipizza dinamicamente le variabili.
+
+I tipi base di dati esistenti in PHP sono:
++boolean
++integer
++float
++string
+
+In PHP esistono anche tipi di dati composti, essi sono:
++array (composto perché un array in PHP può contenere contemporaneamente tutti i tipi base o object)
++object (sarebbero gli oggetti di PHP)
+
+Inoltre esitono anche 3 tipi speciali, essi sono:
++Resurces 
++NULL ( il valore speciale NULL rappresenta una variable senza valore, una variabile è null se: gli viene assegnato il valore null, non gli è stato ancora assegnato un valore, è stata cancellata con la funzione `unset()`)
+
 ####PHP: Campo di visibilità delle variabili in PHP
 In PHP le variabili possono essere globali, locali o super-globali.
 
@@ -89,6 +105,8 @@ __Le variabili Super-Globali__ sono quelle gestite da PHP ($\_SESSION, $\_SERVER
 L’ambito di validità delle variabili super-globali é totale, cioé sono valide sia all’interno che all’esterno delle funzioni. Inoltre va considerato che anche le costanti hanno un abito di validità super-globale.
 
 ####PHP: Funzioni su array e stringhe in PHP
+In PHP sono definite alcune funzioni per operare su stringhe e array
+
 ####PHP: Gli array associativi $_SERVER e $_ENV in PHP
 ####PHP: Moduli auto-chiamanti e sticky-form in PHP
 ####PHP: Interagire con l'intestazione HTTP in PHP
