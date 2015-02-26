@@ -9,11 +9,7 @@ Gli elementi del linguaggio JavaScript sono: Literal (costanti), Variabili, Ogge
 Inoltre permette l'interazione tramite un sistema di eventi ed ha un meccanismo di gestione degli errori. 
 
 ####JS: Campo di visibilità delle variabili in Javascript
-JavaScript gestisce le variabili in maniera del tutto differente dai comuni linguaggi OOP o procedurali.
-
-Le variabili non sono relegate al blocco di codice in cui sono dichiarate, ma rimangono visibili dall'esterno per tutte le funzioni di livello superiore (che racchiudono la funzione che le ha dichiarate) tramite un sistema definito _closure_.
-
-Tale sistema crea una 'bubble' per ogni funzione o istanza di essa che raccoglie tutte le variabli interne e le rende disponibili a tutte le funzioni nel campo di visibilità valori fino al momento in cui la funzione di livello superiore perde ogni riferimento verso quella che le ha create.
+Le variabili di default sono visibili solo all'interno della funzione che le ha dichiarate. 
 
 __Le variabili Globali__ sono dichiarate fuori da qualunque funzione, sono accessibili da qualsiasi parte dello script.
 
