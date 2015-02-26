@@ -74,6 +74,7 @@ Quest'ultima funzione ha come valore di ritorno il risultato della query sotto f
 di solito si usa come parametro di un ciclo `while` per scorere tutti i risultati ottenuti, es: `while($row = mysql_fetch_array($result))`
 
 ####PHP: Array multidimensionali in PHP
+Un array PHP multidimensionale è un array che al suo interno contiene più array monodimensionali o array semplici. Tale codifica può essere utile quando dobbiamo gestire informazioni correlate tra loro (come elenchi o liste).
 
 ####PHP: Interazione con il browser in PHP
 ####PHP: La gestione di file in PHP
@@ -92,7 +93,7 @@ In PHP esistono anche tipi di dati composti, essi sono:
 + array (composto perché un array in PHP può contenere contemporaneamente tutti i tipi base o object)
 + object (sarebbero gli oggetti di PHP)
 
-Inoltre esitono anche 3 tipi speciali, essi sono:
+Inoltre esitono anche altri tipi detti speciali, essi sono:
 
 + Resurces 
 + NULL ( il valore speciale NULL rappresenta una variable senza valore, una variabile è null se: gli viene assegnato il valore null, non gli è stato ancora assegnato un valore, è stata cancellata con la funzione `unset()`)
@@ -108,12 +109,30 @@ __Le variabili Super-Globali__ sono quelle gestite da PHP ($\_SESSION, $\_SERVER
 L’ambito di validità delle variabili super-globali é totale, cioé sono valide sia all’interno che all’esterno delle funzioni. Inoltre va considerato che anche le costanti hanno un abito di validità super-globale.
 
 ####PHP: Funzioni su array e stringhe in PHP
-In PHP sono definite alcune funzioni per operare su stringhe e array
+In PHP sono definite alcune funzioni per operare su stringhe e array.
+
+__Funzioni sulle Stinghe:__
++ `strlen(stringa)` ritorna la lunghezza della stringa
++ `trim(stringa)` elimina gli spazi all'inizio e alla fine della stinga
++ `itrim(stringa)` elimina gli spazi all'inizio della stinga
++ `rtrim(stringa)` elimina gli spazi alla fine della stringa
++ `substr(stringa, intero [, intero])` restituisce una porzione della stringa, il primo intero definisce il numero carattere da cui iniziare a creare la nuova stringa, il secondo intero opzionale serve a definire in che punto fermarsi
++ `str_replace(stringa, stringa, stringa)` serve a sostituire una parte porzione della stringa con un altra stringa, in pratica la funzione prende in ingesso tre parametri, il primo parametro indica la stringa da sostituire, il secondo parametro la stringa con cui sostituire il terzo la stringa su cui effettuare la sostituzione
++ `strpos(stringa, stringa)` Cerca la posizione della seconda stringa all’interno della prima
++ `strstr(stringa, stringa)` Cerca la seconda stringa all’interno della prima, e restituisce la prima stringa a partire dal punto in cui ha trovato la seconda
++ `strtolower(stringa)` Converte tutti i caratteri alfabetici nelle corrispondenti lettere minuscole
++ `strtoupper(stringa)` Converte tutti i caratteri alfabetici nelle corrispondenti lettere maiuscole
++ `ucfirst(stringa)` Trasforma in maiuscolo il primo carattere della stringa
++ `ucwords(stringa)` Trasforma in maiuscolo il primo carattere di ogni parola della stringa, intendendo come parola una serie di caratteri che segue uno spazio
++ `explode(stringa, stringa [, intero])` Trasforma la seconda stringa in un array, usando la prima per separare gli elementi. Il terzo parametro può servire ad indicare il numero massimo di elementi che l’array può contenere 
+
+__Funzioni sugli Array__
++ `sort()`
 
 ####PHP: Gli array associativi $_SERVER e $_ENV in PHP
 ####PHP: Moduli auto-chiamanti e sticky-form in PHP
 ####PHP: Interagire con l'intestazione HTTP in PHP
-In PHP per interaggire con il browser si usa la funzione `header` che ci permette di passare un header HTTP grezzo al client, la funzione `header` per fare ciò ci permette di passargli come parametro una stringa in cui definiamo il tipo di header HTTP da inviare.
+In PHP per interaggire con il browser si usa la funzione `header()` che ci permette di passare un header HTTP grezzo al client, la funzione `header()` per fare ciò ci permette di passargli come parametro una stringa in cui definiamo il tipo di header HTTP da inviare.
 
 ####PHP: L'array associativo $_FILES
 ####PHP: Persistenza dei dati con PHP
