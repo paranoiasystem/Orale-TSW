@@ -19,7 +19,7 @@ Quindi, se **xHttp** è un oggetto di tipo **XMLHttpRequest**, allora si usa la 
 ```javascript
 xHttp.onreadystatechange = funzioneJs;
 ```
-o
+altrimenti
 ```javascript
 xHttp.onreadystatechange = function() {
   //Il tuo codice va qui
@@ -67,7 +67,7 @@ Il metodo **send** ha un solo parametro che si usa o no a seconda del metodo HTT
   ```javascript
   xHttp.send();
   ```
-  o
+  altrimenti
   ```javascript
   xHttp.send(null);
   ```
